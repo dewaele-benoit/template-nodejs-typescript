@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start:dev": "nodemon src/index.ts",
+    "build": "tsc",
     "start": "ts-node src/index.ts",
     "test": "jest",
     "test:coverage": "jest --coverage",
