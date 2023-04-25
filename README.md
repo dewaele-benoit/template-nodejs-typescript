@@ -9,6 +9,8 @@ This project is a template for any application with NodeJS, ExpressJS et TypeScr
 
 NodeJS, Express, TypeScript
 
+**Module pre-install:**  husky, prettier, eslint, nodemon, npm-check, jest 
+
 
 ## Run Locally
 
