@@ -22,13 +22,11 @@ app.use(function (req, res, next) {
 });
 
 // error handler
-app.use(function (
-  err: Error | any,
-  req: Request,
-  res: Response,
-  next: NextFunction
-) {
-  return res.status(err.status || err.statusCode || 500).json({message: err.message});
+/* eslint-disable @typescript-eslint/no-unused-vars */
+app.use(function (err: any, req: Request, res: Response, next: NextFunction) {
+  return res
+    .status(err.status || err.statusCode || 500)
+    .json({ message: err.message });
 });
 
-module.exports = app;
+export default app;

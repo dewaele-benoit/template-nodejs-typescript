@@ -4,8 +4,8 @@
  * Module dependencies.
  */
 
-const app = require("./app");
-const http = require("http");
+import app from "./app";
+import * as http from "http";
 
 (async () => {
   try {
@@ -61,7 +61,7 @@ function startServer() {
    * Event listener for HTTP server "error" event.
    */
 
-  function onError(error: Error | any) {
+  function onError(error: any) {
     if (error.syscall !== "listen") {
       throw error;
     }
@@ -90,7 +90,7 @@ function startServer() {
   function onListening() {
     const addr = server.address();
     const bind =
-      typeof addr === "string" ? "pipe " + addr : "port " + addr.port;
+      typeof addr === "string" ? "pipe " + addr : "port " + addr?.port;
     console.log("Listening on " + bind);
   }
 }

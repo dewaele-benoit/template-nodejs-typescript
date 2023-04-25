@@ -1,7 +1,7 @@
-describe('Maths controller', () => {
-    describe("addController", () => {
-        it("should return 9", () => {
-            // const
-        })
-    })
+describe("Maths controller", () => {
+  describe("addController", () => {
+    it("should return 9", () => {
+      // const
+    });
+  });
 });
