@@ -10,8 +10,7 @@
     "test:coverage": "jest --coverage",
     "dependency-check": "npm-check",
     "lint": "eslint src",
-    "lint:fix": "eslint src --fix",
-    "prepare": "husky install"
+    "lint:fix": "eslint src --fix"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
